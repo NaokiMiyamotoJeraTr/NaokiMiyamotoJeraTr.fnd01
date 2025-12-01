@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>席替えアプリ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>ボタンを押して席替えをしよう！</h1>
+
+  <form id="myForm">
+    <label for="username">ユーザー名:</label>
+    <input type="text" id="username" name="username"><br>
+
+    <label for="email">メールアドレス:</label>
+    <input type="email" id="email" name="email"><br>
+
+    <button type="submit" id="submit_button">送信</button>
+</form>
+
+<br>
+<br>
+
+  <div id="teacher">講師</div>
+  <br>
+  <div id="classroom">
+    <!-- ３人席 -->
+    <div class="table" id="table-1">
+      <div class="seat" id="seat-0"></div>
+      <div class="seat" id="seat-1"></div>
+      <div class="seat" id="seat-n"></div>
+      <div class="seat" id="seat-2"></div>
+    </div>
+    <!-- ４人席 -->
+    <div class="table" id="table-2">
+      <div class="seat" id="seat-3"></div>
+      <div class="seat" id="seat-4"></div>
+      <div class="seat" id="seat-5"></div>
+      <div class="seat" id="seat-6"></div>
+    </div>
+    <!-- ４人席 -->
+    <div class="table" id="table-3">
+      <div class="seat" id="seat-7"></div>
+      <div class="seat" id="seat-8"></div>
+      <div class="seat" id="seat-9"></div>
+      <div class="seat" id="seat-10"></div>
+    </div>
+    <!-- ２人席 -->
+    <div class="table" id="table-4">
+      <div class="seat" id="seat-11"></div>
+      <div class="seat" id="seat-12"></div>
+    </div>
+  </div>
+
+  <button id="change-button">席替え開始</button>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
