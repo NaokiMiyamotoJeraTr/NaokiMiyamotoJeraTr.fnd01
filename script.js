@@ -2,10 +2,8 @@ const students = ["Naoki", "Kaito", "Natsumi", "Enrique", "Moemi", "Goichi", "Hi
 const dataObject = []
 const changeButton = document.getElementById("change-button");
 const submitButton = document.getElementById("submit_button");
-const clearAllButton = document.getElementById("clear-all");
 const resetDefaultButton = document.getElementById("reset-default");
 const studentListDiv = document.getElementById("student-list");
-const studentCount = document.getElementById("student-count");
 
 // 関数の設定
 // 配列をシャッフルする関数
@@ -104,5 +102,3 @@ resetDefaultButton.addEventListener("click", resetToDefault);
 
 // ページ読み込み時に学生一覧を表示
 showStudentList();
-
-
