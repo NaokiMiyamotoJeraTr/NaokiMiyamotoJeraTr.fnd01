@@ -1,4 +1,4 @@
-const students = ["naoki", "kaito", "natsumi", "enrique", "moemi", "goichi", "hiroshi", "jo", "aya", "natalie","risako","mayu","kota"];
+const students = ["Naoki", "Kaito", "Natsumi", "Enrique", "Moemi", "Goichi", "Hiroshi", "Jo", "Aya", "Natalie","Risako","Mayu","Kota"];
 const dataObject = []
 const changeButton = document.getElementById("change-button");
 const submitButton = document.getElementById("submit_button");
