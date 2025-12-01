@@ -10,28 +10,35 @@
 
 <body>
   <h1>ボタンを押して席替えをしよう！</h1>
-
+  
+  <!-- 学生管理セクション -->
+  <div id="student-management">
+    <h2 style="text-align: center;">現在の受講生一覧 (<span id="student-count"></span>名)</h2>
+    <div id="student-list"></div> <!-- 生徒の一覧がここに表示 -->
+    <button id="reset-default" type="button">デフォルトに戻す</button>
+  </div>
+  
+  <!-- 新規受講生登録 -->
   <form id="myForm">
-    <label for="username">ユーザー名:</label>
-    <input type="text" id="username" name="username"><br>
+    <label for="username" style="font-weight: bold;">新規受講生（名前）:</label>
+    <input type="text" id="username" name="username" ><br>
 
-    <label for="email">メールアドレス:</label>
-    <input type="email" id="email" name="email"><br>
 
-    <button type="submit" id="submit_button">送信</button>
+    <button type="button" id="submit_button">受講生を追加</button>
 </form>
 
-<br>
-<br>
 
-  <div id="teacher">講師</div>
+<br>
+<br>
+<div id="classroom-container">
+  <div id="teacher" style="font-weight: bold;">講師</div>
   <br>
   <div id="classroom">
     <!-- ３人席 -->
     <div class="table" id="table-1">
       <div class="seat" id="seat-0"></div>
       <div class="seat" id="seat-1"></div>
-      <div class="seat" id="seat-n"></div>
+      <div class="seat" id="seat-13"></div>
       <div class="seat" id="seat-2"></div>
     </div>
     <!-- ４人席 -->
@@ -58,6 +65,8 @@
   <button id="change-button">席替え開始</button>
 
   <script src="script.js"></script>
+</div>
+
 
 </body>
 
