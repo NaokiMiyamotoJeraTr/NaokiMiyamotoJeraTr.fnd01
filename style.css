@@ -1,0 +1,70 @@
+.seat {
+  background-color: blanchedalmond;
+  color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: black;
+}
+
+#teacher {
+  height: 50px;
+  background-color: aquamarine;
+  color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: black;
+}
+
+
+#classroom {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.table {
+  display: grid;
+  gap: 10px;
+  background-color:beige;
+  /* テーブル背景 */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* 3人席の場合は2列にして2行目に1つ座席 */
+#table-1 {
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(2, 100px);
+}
+
+/* 4人席の場合は2列×2行 */
+#table-2,#table-3 {
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(2, 100px);
+}
+
+#table-4 {
+  grid-template-columns: repeat(1, 100px);
+  grid-template-rows: repeat(2, 100px);
+}
+
+.seat {
+  width: 80px;
+  height: 80px;
+  background-color: blanchedalmond;
+  color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+button {
+  display: block;
+  margin: 0 auto;
+}
