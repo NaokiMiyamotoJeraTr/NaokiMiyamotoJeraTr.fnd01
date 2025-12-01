@@ -1,3 +1,4 @@
+/* 席替え関連のスタイル */
 .seat {
   background-color: blanchedalmond;
   color: brown;
@@ -8,15 +9,15 @@
 }
 
 #teacher {
+  width: 900px;
   height: 50px;
-  background-color: aquamarine;
+  background-color:  blanchedalmond;
   color: brown;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: black;
+  border: 2px solid black;
 }
-
 
 #classroom {
   display: flex;
@@ -28,7 +29,6 @@
   display: grid;
   gap: 10px;
   background-color:beige;
-  /* テーブル背景 */
   padding: 10px;
   border-radius: 5px;
 }
@@ -64,7 +64,88 @@
 }
 
 
-button {
-  display: block;
-  margin: 0 auto;
+#submit_button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+#change-button {
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px auto;
+}
+
+
+/* 学生管理システムのスタイル */
+#student-management {
+  width: 1000px;
+  margin: 20px 0;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+
+#student-list {
+  max-height: 150px;
+  overflow-y: auto;
+  margin: 10px 0;
+  padding: 8px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.student-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 8px;
+  margin: 3px 0;
+  background-color: #f0f8ff;
+  border: 1px solid #b0d4f0;
+  border-radius: 3px;
+}
+
+.student-name {
+  font-weight: bold;
+  color:black;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 2px 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 0;
+  display: inline-block;
+}
+
+
+#clear-all, #reset-default {
+  background-color: #34495e;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
 }
